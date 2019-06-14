@@ -19,7 +19,24 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
+        <!-- Encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- Version -->
         <java.version>12</java.version>
+
+        <!-- Swagger -->
+        <swagger-annotations.version>1.5.22</swagger-annotations.version>
+        <openapi-generator-maven-plugin.version>3.3.4</openapi-generator-maven-plugin.version>
+
+        <!-- Sonar -->
+        <sonar.jacoco.itReportPath>${project.build.directory}/coverage-reports/jacoco-it.exec
+        </sonar.jacoco.itReportPath>
+        <sonar.jacoco.reportPath>${project.build.directory}/coverage-reports/jacoco.exec</sonar.jacoco.reportPath>
+        <sonar.jacoco.reportPaths>${sonar.jacoco.reportPath},${sonar.jacoco.itReportPath}</sonar.jacoco.reportPaths>
+        <sonar.language>java</sonar.language>
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
     </properties>
 
     <dependencies>
@@ -46,8 +63,6 @@
             <artifactId>spring-plugin-core</artifactId>
             <version>1.2.0.RELEASE</version>
         </dependency>
-
-
 
 
         <dependency>

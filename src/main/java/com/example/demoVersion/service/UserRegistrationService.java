@@ -17,7 +17,6 @@ public class UserRegistrationService {
     }
 
     public void saveUserCredentionals(String uname, String upassword) {
-
         UserCredentials userCredentials = new UserCredentials();
         userCredentials.setUname(uname);
         userCredentials.setUpassword(upassword);
