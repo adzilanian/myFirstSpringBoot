@@ -1,5 +1,7 @@
 com\example\demoVersion\service\UserRegistrationService.class
-com\example\demoVersion\db\UserCredentials.class
 com\example\demoVersion\DemoApplication.class
+com\example\demoVersion\service\UserLoginService.class
+com\example\demoVersion\db\UserCredentials.class
+com\example\demoVersion\config\SwaggerConfig.class
 com\example\demoVersion\controller\RegisterController.class
 com\example\demoVersion\db\UserRegistrationRepository.class
