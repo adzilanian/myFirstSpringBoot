@@ -16,7 +16,7 @@ public class UserRegistrationService {
         this.userRegistrationRepository = userRegistrationRepository;
     }
 
-    public void saveUserCredentionals(String uname, String upassword) {
+    public void saveUserCredentials(String uname, String upassword) {
         UserCredentials userCredentials = new UserCredentials();
         userCredentials.setUname(uname);
         userCredentials.setUpassword(upassword);

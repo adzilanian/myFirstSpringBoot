@@ -7,9 +7,9 @@ import javax.persistence.*;
 public class UserCredentials {
 
     @Id
-    @Column(name="usertbl_id", unique = true, nullable = false, insertable = false)
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
 
     @Column
     private String uname;

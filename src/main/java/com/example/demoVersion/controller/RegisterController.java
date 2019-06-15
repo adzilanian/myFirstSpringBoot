@@ -18,13 +18,17 @@ public class RegisterController {
     private UserLoginService userLoginService;
 
 
-    public RegisterController(UserRegistrationService userRegistrationService) {
+    public RegisterController(UserRegistrationService userRegistrationService,
+                              UserLoginService userLoginService) {
         this.userRegistrationService = userRegistrationService;
+        this.userLoginService = userLoginService;
     }
+
+    //Лучше не использовать сокращения в назанваниях
 
     @PostMapping("/register")
     public void register(@RequestParam String uname, @RequestParam String upassword) {
-        userRegistrationService.saveUserCredentionals(uname, upassword);
+        userRegistrationService.saveUserCredentials(uname, upassword);
     }
 
     @PostMapping("/login")
