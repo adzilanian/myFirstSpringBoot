@@ -32,8 +32,9 @@ public class RegisterController {
     }
 
     @PostMapping("/login")
-    public void login(@RequestParam String uname, @RequestParam String upassword) {
-        userLoginService.controlUserCredentionals(uname, upassword);
+    public String login(@RequestParam String uname, @RequestParam String upassword) {
+        return userLoginService.controlUserCredentionals(uname, upassword);
+
     }
 
 }
